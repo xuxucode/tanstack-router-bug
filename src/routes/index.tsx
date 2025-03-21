@@ -10,11 +10,12 @@ function throwError() {
 }
 
 function handleClick() {
-  console.log('button clicked')
   // Using the object destructure.
-  let { something } = throwError()
+  let { something } = throwError() // this `throw` is ignored
   console.log('this message should not be printed')
 }
+
+handleClick()
 
 function App() {
   return (
